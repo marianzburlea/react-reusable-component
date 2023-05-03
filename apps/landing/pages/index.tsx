@@ -1,7 +1,11 @@
+import { Aspect } from '@wowjob/atom';
+
 const LandingPage = () => {
   return (
     <div>
-      <h1>landing page</h1>
+      <Aspect>
+        <h1>landing page</h1>
+      </Aspect>
     </div>
   );
 };
