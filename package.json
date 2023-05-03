@@ -4,10 +4,17 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "formik": "^2.2.9",
+    "styled-components": "^5.3.10",
+    "yup": "^1.1.1"
+  },
   "devDependencies": {
+    "@nrwl/next": "^16.0.3",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "15.9.3",
+    "@types/styled-components": "^5.1.26",
+    "jest-styled-components": "^7.1.1",
     "nx": "15.9.3"
   }
 }
