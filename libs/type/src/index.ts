@@ -1,1 +1,5 @@
-// Use this file to export React client components (e.g. those with 'use client' directive) or other non-server utilities
+// map and list
+export { iconMap } from './lib/icon';
+
+// type
+export { TIconType } from './lib/icon';
