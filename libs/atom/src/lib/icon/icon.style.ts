@@ -1,14 +1,23 @@
-import styled from 'styled-components';
-import { $TIcon } from './icon.type';
-import { iconMap } from '@wowjob/type';
+import styled from 'styled-components'
+import { $TIcon } from './icon.type'
+import { iconMap, iconSizeMap } from '@wowjob/type'
 
 export const getIconSymbol = ({ $icon }: $TIcon) =>
-  `content: '${iconMap[$icon]}';`;
+  `content: '${iconMap[$icon]}';`
+
+export const getIconSize = ({ $size = 'm' }: $TIcon) =>
+  `
+  width: ${iconSizeMap[$size] / 16}rem;
+  height: ${iconSizeMap[$size] / 16}rem;
+  font-size: ${iconSizeMap[$size] / 32}rem;
+`
 
 export const SIcon = styled.span<$TIcon>`
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  ${getIconSize}
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: 'reusable-component' !important;
   speak: never;
@@ -24,4 +33,4 @@ export const SIcon = styled.span<$TIcon>`
   &:before {
     ${getIconSymbol}
   }
-`;
+`

@@ -1,6 +1,6 @@
-import { SIcon } from './icon.style';
-import { TIcon } from './icon.type';
+import { SIcon } from './icon.style'
+import { TIcon } from './icon.type'
 
-export const Icon = ({ icon }: TIcon) => {
-  return <SIcon $icon={icon} />;
-};
+export const Icon = ({ icon, size }: TIcon) => {
+  return <SIcon $icon={icon} $size={size} />
+}
