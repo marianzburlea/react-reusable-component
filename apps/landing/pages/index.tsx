@@ -1,4 +1,4 @@
-import { Aspect, Icon } from '@wowjob/atom'
+import { Aspect, Button, Icon } from '@wowjob/atom'
 
 const LandingPage = () => {
   return (
@@ -11,6 +11,21 @@ const LandingPage = () => {
         <Icon icon="file-download2" size="xl" />
         <Icon icon="arrow-right" size="xxl" />
         <Icon icon="clock4" size="xxxl" />
+
+        <Button radius="normal" size="xs">
+          laalla
+        </Button>
+        <Button radius="pill" size="l">
+          tra la la
+        </Button>
+        <Button radius="normal" size="giant">
+          {' '}
+          uuuu uu
+        </Button>
+        <Button radius="pill" size="massive">
+          oo oo OO
+        </Button>
+        <Button size="huge">rectangle</Button>
       </Aspect>
 
       <div></div>
