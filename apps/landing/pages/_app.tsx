@@ -1,3 +1,4 @@
+import { Global } from '@wowjob/atom';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
@@ -9,6 +10,8 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <main>
+        <Global />
+
         <Component {...pageProps} />
       </main>
     </>

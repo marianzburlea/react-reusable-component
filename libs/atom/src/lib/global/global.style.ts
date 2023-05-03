@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+// https://fonts.google.com/specimen/Roboto?query=robo
 export const SReset = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   *,
