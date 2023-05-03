@@ -1,9 +1,11 @@
-import { TIconType } from '@wowjob/type';
+import type { TIconType, TIconSizeType } from '@wowjob/type'
 
 export type TIcon = {
-  icon: TIconType;
-};
+  icon: TIconType
+  size?: TIconSizeType
+}
 
 export type $TIcon = {
-  $icon: TIconType;
-};
+  $icon: TIconType
+  $size?: TIconSizeType
+}

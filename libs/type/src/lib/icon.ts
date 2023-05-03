@@ -24,6 +24,18 @@ export const iconMap = {
   stop2: '\\ed87',
   'arrow-right': '\\edbb',
   'arrow-up6': '\\edcc',
-} as const;
+} as const
 
-export type TIconType = keyof typeof iconMap;
+export const iconSizeMap = {
+  xxs: 8,
+  xs: 12,
+  s: 16,
+  m: 20,
+  l: 24,
+  xl: 32,
+  xxl: 48,
+  xxxl: 64,
+} as const
+
+export type TIconType = keyof typeof iconMap
+export type TIconSizeType = keyof typeof iconSizeMap
