@@ -1,4 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { colorMap } from '@wowjob/type'
+import styled, { createGlobalStyle } from 'styled-components'
 
 // https://fonts.google.com/specimen/Roboto?query=robo
 export const SReset = createGlobalStyle`
@@ -17,8 +18,15 @@ export const SReset = createGlobalStyle`
 
   body {
     font-family: 'Roboto', sans-serif;
+    background-color: hsla(${colorMap.veryLightGray.h}, ${colorMap.veryLightGray.s}%, ${colorMap.veryLightGray.l}%, 1);
   }
-`;
+  
+  @media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: hsla(${colorMap.darkGray.h}, ${colorMap.darkGray.s}%, ${colorMap.darkGray.l}%, 1);
+    }
+  }
+`
 
 export const SFont = createGlobalStyle`
   @font-face {
@@ -32,4 +40,4 @@ export const SFont = createGlobalStyle`
     font-display: block;
   }
 
-`;
+`

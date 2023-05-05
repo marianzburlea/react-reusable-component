@@ -1,3 +1,4 @@
+// padding.ts
 export const paddingMap = {
   none: 0, // No padding
   xxs: 4, // Extra extra small
