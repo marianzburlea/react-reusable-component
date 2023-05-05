@@ -1,3 +1,4 @@
+// icon.ts
 export const iconMap = {
   home: '\\e900',
   pencil7: '\\e914',

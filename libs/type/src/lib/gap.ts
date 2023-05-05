@@ -1,4 +1,5 @@
-export const gapMap = {
+// gap.ts
+export const buttonGapMap = {
   none: 0, // No gap
   xxs: 2, // Extra extra small
   xs: 2, // Extra small
@@ -14,4 +15,4 @@ export const gapMap = {
   colossal: 16, // Colossal
 } as const
 
-export type TGapType = keyof typeof gapMap
+export type TGapType = keyof typeof buttonGapMap

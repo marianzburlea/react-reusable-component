@@ -1,11 +1,17 @@
 // aspect.style.ts
+import styled from 'styled-components'
 
-import styled from 'styled-components';
-import type { $TAspect } from './aspect.type';
+import type { $TAspect } from './aspect.type'
+import { getAspect } from '@wowjob/util'
 
 export const SAspect = styled.div<$TAspect>`
-  aspect-ratio: 16/9;
-  border: 12px solid green;
+  ${getAspect}
+
   width: 100%;
   height: 100%;
-`;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`

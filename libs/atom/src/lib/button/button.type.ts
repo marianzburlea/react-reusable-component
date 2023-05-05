@@ -1,6 +1,10 @@
+// button.type.ts
 import type {
+  TAlignType,
   TButtonType,
+  TColorType,
   TGapType,
+  TJustifyType,
   TPaddingType,
   TSizeType,
   TWidthType,
@@ -16,13 +20,21 @@ export type TButton = {
   width?: TWidthType
   padding?: TPaddingType
   radius?: TButtonRadiusType
+  color?: TColorType
+  bgColor?: TColorType
+  align?: TAlignType
+  justify?: TJustifyType
 }
 
 export type $TButton = {
+  $align?: TAlignType
+  $justify?: TJustifyType
   type?: TButtonType
   $size?: TSizeType
   $gap?: TGapType
   $width?: TWidthType
   $padding?: TPaddingType
   $radius?: TButtonRadiusType
+  $color?: TColorType
+  $bgColor?: TColorType
 }

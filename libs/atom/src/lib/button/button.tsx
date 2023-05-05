@@ -1,3 +1,4 @@
+// button.tsx
 import { SButton } from './button.style'
 import type { TButton } from './button.type'
 
@@ -9,10 +10,18 @@ export const Button = ({
   width,
   padding,
   radius,
+  color,
+  bgColor,
+  align,
+  justify,
 }: TButton) => {
   return (
     <SButton
       $gap={gap}
+      $align={align}
+      $justify={justify}
+      $color={color}
+      $bgColor={bgColor}
       $size={size}
       type={type}
       $width={width}
