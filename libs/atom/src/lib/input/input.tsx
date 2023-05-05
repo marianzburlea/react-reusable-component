@@ -27,14 +27,7 @@ const Input = ({
       />
 
       {errorMessage && (
-        <Box
-          fill="full"
-          light
-          color="danger"
-          padding="m"
-          lightness={90}
-          size="small"
-        >
+        <Box fill="full" light color="danger" padding="m" size="s">
           <Text color="danger">{errorMessage}</Text>
         </Box>
       )}
