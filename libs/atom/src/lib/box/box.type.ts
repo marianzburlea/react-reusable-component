@@ -9,6 +9,7 @@ import type {
   TSizeType,
   TWidthType,
   TBoxAsType,
+  TCursorType,
 } from '@wowjob/type'
 import type { ReactNode } from 'react'
 
@@ -49,6 +50,8 @@ export type TBox = {
   justify?: TJustifyType
   position?: TBoxPositionType
   inset?: TInset[]
+  pointer?: TCursorType
+  bgImage?: string
 }
 
 export type $TBox = {
@@ -73,4 +76,6 @@ export type $TBox = {
   $height?: TWidthType
   $align?: TAlignType
   $justify?: TJustifyType
+  $pointer?: TCursorType
+  $bgImage?: string
 }

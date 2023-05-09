@@ -3,6 +3,7 @@ import {
   CardList,
   Footer,
   GuaranteeedBanner,
+  Hero,
   PopularCategory,
   TopHeader,
 } from '@wowjob/organism'
@@ -19,16 +20,20 @@ export const HomePage = ({
   const showCardList = Array.isArray(homepageCardList)
 
   return (
-    <Box vertical gap="l" align>
-      <Box padding="huge" />
+    <Box vertical align>
+      <Box padding="xxl" />
+
+      <Hero />
+
+      <Box vertical gap="l" align padding="l">
+        <PopularCategory list={popularCategoryList} />
+
+        {bannerInfo?.logo && <GuaranteeedBanner info={bannerInfo} />}
+
+        {showCardList && <CardList list={homepageCardList} />}
+      </Box>
+
       <TopHeader linkList={topHeaderLinkList} />
-
-      <PopularCategory list={popularCategoryList} />
-
-      {bannerInfo?.logo && <GuaranteeedBanner info={bannerInfo} />}
-
-      {showCardList && <CardList list={homepageCardList} />}
-
       <Footer linkList={footerLinkList} iconList={footerIconList} />
     </Box>
   )

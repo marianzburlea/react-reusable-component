@@ -27,6 +27,8 @@ const Box = ({
   justify,
   position,
   inset,
+  pointer,
+  bgImage,
 }: TBox) => {
   const extraProps: TExtraProps = {}
 
@@ -48,8 +50,10 @@ const Box = ({
       $dark={dark}
       $size={size}
       $radius={radius}
+      $bgImage={bgImage}
       $wrap={wrap}
       $hidden={hidden}
+      $pointer={pointer}
       $inset={inset}
       $padding={padding}
       $width={width}

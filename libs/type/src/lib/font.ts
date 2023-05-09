@@ -1,6 +1,8 @@
 // font.ts
+
 export const textSizeMap = {
   text: {
+    none: 0,
     xxs: 12,
     xs: 14,
     s: 16,
@@ -8,8 +10,14 @@ export const textSizeMap = {
     l: 20,
     xl: 22,
     xxl: 22,
+    xxxl: 24, // XX Large
+    huge: 26, // Huge
+    giant: 28, // Giant
+    massive: 32, // Massive
+    colossal: 36, // Massive
   },
   title: {
+    none: 0,
     xxs: 24,
     xs: 28,
     s: 32,
@@ -17,6 +25,11 @@ export const textSizeMap = {
     l: 40,
     xl: 44,
     xxl: 48,
+    xxxl: 56, // XX Large
+    huge: 60, // Huge
+    giant: 72, // Giant
+    massive: 84, // Massive
+    colossal: 96, // Massive
   },
 } as const
 

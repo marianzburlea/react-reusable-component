@@ -1,4 +1,4 @@
-import { sizeMap } from '@wowjob/type'
+import { TCursorType, sizeMap } from '@wowjob/type'
 import type {
   TBoxPositionType,
   TInset,
@@ -45,6 +45,18 @@ export const getVertical = ({ $vertical }: { $vertical?: vertical }) =>
 
 export const getWrap = ({ $wrap }: { $wrap?: wrap }) =>
   $wrap ? `flex-wrap: wrap;` : ''
+
+export const getPointer = ({ $pointer }: { $pointer?: TCursorType }) =>
+  $pointer ? `cursor: ${$pointer};` : ''
+
+export const getBackgroundIamge = ({ $bgImage }: { $bgImage?: string }) =>
+  $bgImage
+    ? `
+  background-image: url(${$bgImage});
+  background-size: cover;
+  background-position: center;
+`
+    : ''
 
 export const getRadius = ({ $radius }: { $radius?: TSizeType }) =>
   $radius ? `border-radius: ${sizeMap[$radius] / 32}rem;` : ''

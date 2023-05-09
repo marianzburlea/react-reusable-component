@@ -10,7 +10,7 @@ import type {
   TWidthType,
 } from '@wowjob/type'
 import { TButtonRadiusType } from '@wowjob/type'
-import type { ReactNode } from 'react'
+import type { MouseEvent, ReactNode } from 'react'
 
 export type TButton = {
   children?: ReactNode
@@ -24,6 +24,7 @@ export type TButton = {
   bgColor?: TColorType
   align?: TAlignType
   justify?: TJustifyType
+  click?: (e: MouseEvent<HTMLButtonElement>) => void
 }
 
 export type $TButton = {

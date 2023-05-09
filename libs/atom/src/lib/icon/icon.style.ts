@@ -6,6 +6,9 @@ import { getColor } from '@wowjob/util'
 export const getIconSymbol = ({ $icon }: $TIcon) =>
   `content: '${iconMap[$icon]}';`
 
+export const getShape = ({ $round }: $TIcon) =>
+  $round ? `border-radius: 50%;` : ''
+
 export const getIconSize = ({ $size = 'm' }: $TIcon) =>
   `
   width: ${iconSizeMap[$size] / 16}rem;
@@ -16,6 +19,7 @@ export const getIconSize = ({ $size = 'm' }: $TIcon) =>
 export const SIcon = styled.span<$TIcon>`
   ${getIconSize}
   ${getColor}
+  ${getShape}
 
   display: inline-flex;
   justify-content: center;
@@ -33,15 +37,6 @@ export const SIcon = styled.span<$TIcon>`
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  &:hover {
-    background-color: hsla(
-      ${colorMap.hover.h},
-      ${colorMap.hover.s + '%'},
-      ${colorMap.hover.l + '%'},
-      1
-    );
-  }
 
   &:before {
     ${getIconSymbol}

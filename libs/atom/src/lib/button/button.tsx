@@ -14,6 +14,7 @@ export const Button = ({
   bgColor,
   align,
   justify,
+  click,
 }: TButton) => {
   return (
     <SButton
@@ -27,6 +28,7 @@ export const Button = ({
       $width={width}
       $padding={padding}
       $radius={radius}
+      onClick={click}
     >
       {children}
     </SButton>

@@ -17,6 +17,7 @@ import {
   getWidth,
   getWrap,
 } from '@wowjob/util'
+import { getBackgroundIamge, getPointer } from 'libs/util/src/lib/display'
 
 export const SBox = styled.div<$TBox>`
   display: ${({ $inline }) => ($inline ? `inline-flex` : 'flex')};
@@ -40,6 +41,8 @@ export const SBox = styled.div<$TBox>`
   ${getInset}
   ${getBackgroundColor}
   ${getColor}
+  ${getPointer}
+  ${getBackgroundIamge}
 
   
   @media screen and (prefers-color-scheme: dark) {

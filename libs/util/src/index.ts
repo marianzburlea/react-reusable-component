@@ -17,6 +17,7 @@ export {
   getHidden,
   getInset,
   getPosition,
+  getBackgroundIamge,
 } from './lib/display'
 export { getPadding } from './lib/spacing'
 export { getSrcset } from './lib/srcset'
